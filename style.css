@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #fff0f5;
+  color: #333;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.container {
+  width: 90%;
+  max-width: 800px;
+  margin: auto;
+  padding: 40px 0;
+}
+
+.hero {
+  background: #ffdbe6;
+  padding-top: 60px;
+}
+
+.hero-img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 0 15px rgba(0,0,0,0.15);
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.hero-img:hover {
+  transform: scale(1.05);
+}
+
+.love-pop {
+  position: absolute;
+  font-size: 24px;
+  animation: pop 1s ease-out forwards;
+  user-select: none;
+  pointer-events: none;
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(0) translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.5) translateY(-50px);
+    opacity: 0;
+  }
+}
+
+h1, h2 {
+  color: #d63384;
+  margin-bottom: 10px;
+}
+
+p {
+  padding: 0 20px;
+}
+
+.grid-foto {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.grid-foto img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.grid-foto img:hover {
+  animation: float 1s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+  100% { transform: translateY(0); }
+}
+
+.timeline ul {
+  list-style: none;
+  padding: 0;
+}
+
+.timeline li {
+  margin-bottom: 10px;
+  color: #6a1b9a;
+}
+
+.quotes p {
+  font-style: italic;
+  color: #ba68c8;
+}
+
+footer {
+  background: #ffcfe0;
+  padding: 20px;
+  font-size: 1rem;
+  color: #6d214f;
+}
+
+#love-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 999;
+  overflow: hidden;
+}
+
+.love {
+  position: absolute;
+  top: -20px;
+  font-size: 24px;
+  animation: fall linear;
+  user-select: none;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(100vh);
+    opacity: 0;
+  }
+}
+
+/* === Responsive Design === */
+@media (max-width: 600px) {
+  .hero-img {
+    width: 120px;
+    height: 120px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  .grid-foto img {
+    width: 100px;
+    height: 100px;
+  }
+
+  p {
+    font-size: 0.95rem;
+  }
+}

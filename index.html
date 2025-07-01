@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Untuk Kamu 💖</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <audio autoplay loop>
+    <source src="audio/lagu.mp3" type="audio/mpeg" />
+  </audio>
+
+ <script>
+  const audio = document.getElementById('lagu');
+
+  function mulaiAudio() {
+    if (audio.paused) {
+      audio.play().catch(err => {
+        console.log("Autoplay diblokir:", err);
+      });
+    }
+  }
+
+  document.addEventListener('click', mulaiAudio, { once: true });
+  document.addEventListener('touchstart', mulaiAudio, { once: true });
+</script>
+  
+  <div id="love-container"></div>
+  <section class="hero">
+    <div class="container">
+      <img src="img/3.jpg" alt="Foto Pacar" class="hero-img" />
+      <h1>Haii Sayangggkuu manisskuu cintakuu 💕</h1>
+      <p>Aku buat ini untuk kamuu, alasanku tersenyum setiap hari 💖</p>
+    </div>
+  </section>
+
+  <section class="tentang">
+    <div class="container">
+      <h2> Bagian Terindah Hidupku </h2>
+      <p> Dari semua hal yang bikin aku tenang, kamu yang paling menenangkan. 
+          Engga perlu banyak alasan buat tetap jatuh cinta, cukup lihat kamu aja, hatiku udah tenang. Kamu bukan sekadar orang spesial,kamu lebih dari itu 
+          dan seperti lirik di lagu Perahu Kertas,Dari semua orang di dunia ini, hatiku tetap nemu kamu dan aku bersyukur banget untuk itu.❤️</p>
+    </div>
+  </section>
+
+  <section class="galeri">
+    <div class="container">
+      <h2> Maniss kuu 📸</h2>
+      <div class="grid-foto">
+        <img src="img/2.jpg" alt="momen 1" />
+        <img src="img/1.jpg" alt="momen 2" />
+        <img src="img/4.jpg" alt="momen 3" />
+        <img src="img/5.jpg" alt="momen 4" />
+        <img src="img/6.jpg" alt="momen 5" />
+      </div>
+    </div>
+  </section>
+
+  <section class="timeline">
+    <div class="container">
+      <h2> Dia di Mataku </h2>
+      <p>Dia terlalu sempurna di mataku.
+         Ngga selalu hadir dengan kata, tapi selalu ada dengan rasa.
+         Dari semua orang, dia satu-satunya yang aku pilih setiap hari dan satu-satunya yang selalu berhasil bikin aku kangen, bahkan cuma karena hal-hal kecil.
+         Dan lucunya… dia selalu maunya dipanggil "manis", padahal dia sendiri yang paling bikin hidupku manis. 🍬💗</p>
+    </div>
+  </section>
+
+  <section class="quotes">
+    <div class="container">
+      <h2> Kenapa Dia Berarti ? </h2>
+      <p>Dia orang pertama yang bilang aku bisa, bahkan saat aku sendiri ga yakin.
+         Dia yang nggak nyuruh aku kuat, tapi pelan-pelan bikin aku jadi kuat.
+         Dia pertama kali nyemangatin aku untuk terus bangkit lagi bukan dengan kata-kata besar, tapi dengan hadirnya yang tulus.
+         Makanya, buat akuu dia tidakk tergantikan.</p>
+    </div> 
+  </section>
+
+  <section class="surat">
+    <div class="container">
+      <h2> Kalau Kamu Baca Ini... </h2>
+      <p>Berarti kamu masih jadi alasanku senyum hari ini.
+         Engga ada maksud apa-apa sih… cuma mau bilang kamu tuh istimewa banget, 
+         dan aku nggak pernah nyesel jatuh hati sama kamu.💌</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>Terima kasih sudah jadi bagian dari hidupku.
+       EVERY DAY I LOVEE YOUU 💕</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
